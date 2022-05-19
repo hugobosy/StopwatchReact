@@ -3,6 +3,7 @@
 Projekt tworzony za pomocą [Create React App](https://github.com/facebook/create-react-app).
 
 ## Uruchomienie aplikacji
+
 Do uruchomienia aplikacji potrzebny jest zainstalowany [Node.js](https://nodejs.org/en/)
 
 Program możesz uruchomić w kilku prostych krokach:
@@ -17,8 +18,14 @@ Program możesz uruchomić w kilku prostych krokach:
 
 #### Aplikacja będzie uruchomiona w Twojej przeglądarce pod adresem: [http://localhost:3000](http://localhost:3000)
 
+
+## Opis aplikacji
 Prosta aplikacja polegająca na uruchamianiu i zatrzymywaniu stopera.
 Główny komponent oparty o klasę, komponent do zmiany stanu stworzony funkcyjnie.
 
 Użyte technologie:
 React.js, JavaScript, Css, Html
+
+## Czego się nauczyłem?
+W tym projekcie utrwalałem wiedzę nt. przepływu danych pomiędzy komponentami za pomocą props oraz tworzenie dynamicznych
+styli css, które zmieniają się odpowiednio do określonego stanu komponentu.
