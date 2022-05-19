@@ -17,3 +17,8 @@ Program możesz uruchomić w kilku prostych krokach:
 
 #### Aplikacja będzie uruchomiona w Twojej przeglądarce pod adresem: [http://localhost:3000](http://localhost:3000)
 
+Prosta aplikacja polegająca na uruchamianiu i zatrzymywaniu stopera.
+Główny komponent oparty o klasę, komponent do zmiany stanu stworzony funkcyjnie.
+
+Użyte technologie:
+React.js, JavaScript, Css, Html
