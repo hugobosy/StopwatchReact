@@ -32,17 +32,27 @@ class App extends Component {
 
     handleResetClick = () => {
         this.setState({
-            count: 0
+            count: 0,
         })
+
+        if(this.state.active) {
+            this.setState({
+                active: !this.state.active
+            })
+        } else {
+            return
+        }
+
+        clearInterval(this.intervalId);
     }
 
     render() {
         return (
-            <>
-                <p className="timer">{this.state.count.toFixed(2)}</p>
+            <div className="wrapper">
+                <p className="timer"><span>{this.state.count.toFixed(2)}</span></p>
                 <SwitchButton click={this.handleClick} active={this.state.active}/>
                 <ResetButton click={this.handleResetClick} active={this.state.count}/>
-            </>
+            </div>
         )
     }
 }

@@ -1,5 +1,6 @@
 import React from "react";
+import './ResetButton.css';
 
 export const ResetButton = (props) => (
-    <button onClick={props.click} className={props.active ? "active-reset" : "disable-reset"}>Reset</button>
+    <button onClick={props.click} disabled={!props.active} className={props.active ? "reset-btn" : null}>Reset</button>
 )
