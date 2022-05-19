@@ -29,3 +29,6 @@ React.js, JavaScript, Css, Html
 ## Czego się nauczyłem?
 W tym projekcie utrwalałem wiedzę nt. przepływu danych pomiędzy komponentami za pomocą props oraz tworzenie dynamicznych
 styli css, które zmieniają się odpowiednio do określonego stanu komponentu.
+
+
+# [Demo aplikacji](https://stopwatch-react-liard.vercel.app/)
