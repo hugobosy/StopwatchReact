@@ -5,14 +5,24 @@ import {ResetButton} from "./ResetButton";
 
 class App extends Component {
     state = {
-        count: 0,
+        second: 0,
+        minutes: 0,
         active: false,
     }
 
     addSec = () => {
-        this.setState({
-            count: this.state.count + 0.014
-        })
+        if(this.state.second >= 60.00) {
+            console.log('minuta')
+
+            this.setState({
+                second: 0,
+                minutes: this.state.minutes += 1
+            })
+        } else {
+            this.setState({
+                second: this.state.second + 0.01
+            })
+        }
     }
 
     handleClick = () => {
@@ -32,7 +42,8 @@ class App extends Component {
 
     handleResetClick = () => {
         this.setState({
-            count: 0,
+            second: 0,
+            minutes: 0,
         })
 
         if(this.state.active) {
@@ -49,9 +60,9 @@ class App extends Component {
     render() {
         return (
             <div className="wrapper">
-                <p className="timer"><span>{this.state.count.toFixed(2)}</span></p>
+                <p className="timer"><span>{this.state.minutes} : {this.state.second.toFixed(2)}</span></p>
                 <SwitchButton click={this.handleClick} active={this.state.active}/>
-                <ResetButton click={this.handleResetClick} active={this.state.count}/>
+                <ResetButton click={this.handleResetClick} active={this.state.second}/>
             </div>
         )
     }
