@@ -31,4 +31,8 @@ W tym projekcie utrwalałem wiedzę nt. przepływu danych pomiędzy komponentami
 styli css, które zmieniają się odpowiednio do określonego stanu komponentu.
 
 
+<<<<<<< HEAD
 [Demo aplikacji](https://stopwatch-react-liard.vercel.app/)
+=======
+[Demo aplikacji](https://stopwatch-react-liard.vercel.app/)
+>>>>>>> ba3c6c380af8eee63a24394e11e2b4515baeb14f
